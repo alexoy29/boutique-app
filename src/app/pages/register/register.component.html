@@ -1,7 +1,7 @@
 <div class="register-container">
   <h2 class="register-title">Créer un compte</h2>
   <form #registerForm="ngForm" (ngSubmit)="enregistrer()" style="display: flex; flex-direction: column; align-items: center; width: 100%;">
-    <input type="text" placeholder="Nom" [(ngModel)]="nom" name="nom" required style="margin-bottom: 18px; width: 30%;" />
+    <input type="text" placeholder="Nom de famille" [(ngModel)]="nom" name="nom" required style="margin-bottom: 18px; width: 30%;" />
     <input type="text" placeholder="Prénom" [(ngModel)]="prenom" name="prenom" required style="margin-bottom: 18px; width: 30%;" />
     <input type="email" placeholder="Adresse email" [(ngModel)]="email" name="email" required style="margin-bottom: 18px; width: 30%;" />
     <input type="password" placeholder="Mot de passe" [(ngModel)]="password" name="password" required style="margin-bottom: 18px; width: 30%;" />
