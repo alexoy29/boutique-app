@@ -29,6 +29,7 @@ yarn-error.log
 .history/*
 
 # Miscellaneous
+/.codex-dbtool/
 /.angular/cache
 .sass-cache/
 /connect.lock
