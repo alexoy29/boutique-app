@@ -1,0 +1,66 @@
+.register-container {
+  width: 350px;
+  margin: 60px auto;
+  padding: 32px 28px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-title {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #222;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #d1d1d1;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #fafbfc;
+  transition: border 0.2s;
+}
+
+input:focus {
+  border: 1.5px solid #007bff;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.link-login {
+  margin-top: 18px;
+  font-size: 0.97rem;
+  color: #007bff;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.link-login:hover {
+  text-decoration: underline;
+}

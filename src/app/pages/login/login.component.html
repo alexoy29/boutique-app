@@ -1,0 +1,25 @@
+<div class="home-page">
+  <div class="commerce-bg" aria-hidden="true">
+    <span class="market-card card-1"></span>
+    <span class="market-card card-2"></span>
+    <span class="coin coin-1">$</span>
+    <span class="coin coin-2">€</span>
+    <span class="cart cart-1"></span>
+  </div>
+
+  <section class="welcome-panel">
+    <p class="eyebrow">Boutique en ligne</p>
+    <h1>Acheter, vendre, decouvrir.</h1>
+    <p class="intro">Connectez-vous pour retrouver les produits, composer votre panier et suivre vos commandes.</p>
+  </section>
+
+  <div class="login-container">
+    <h2>Connexion</h2>
+    <form (ngSubmit)="seConnecter()">
+      <input type="email" [(ngModel)]="email" name="email" placeholder="Email" required>
+      <input type="password" [(ngModel)]="password" name="password" placeholder="Mot de passe" required>
+      <button type="submit">Se connecter</button>
+    </form>
+    <p>Pas encore de compte ? <a routerLink="/register">Creer un compte</a></p>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="commandes-container">
+  <div *ngFor="let commande of commandes" class="commande-card">
+    <h3>Commande de {{ commande.email }}</h3>
+    <h3>Commande du {{ commande.createdAt | date:'dd/MM/yyyy HH:mm' }}</h3>
+    <ul class="commande-produits">
+      <li *ngFor="let produit of commande.items">
+        {{ produit.nom }} x{{ produit.quantity }} - {{ produit.unitPrice | currency:'EUR' }}
+      </li>
+    </ul>
+    <p class="total">Total : {{ commande.total | currency:'EUR' }}</p>
+    <p class="commande-date">Enregistree le {{ commande.createdAt | date:'longDate' }}</p>
+  </div>
+</div>
+
+<a routerLink="/produits" class="btn-retour">
+  Retour aux produits
+</a>

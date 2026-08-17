@@ -1,0 +1,7 @@
+<nav class="navbar">
+  <div class="user-info" *ngIf="utilisateur">
+    👤 {{ utilisateur.prenom }} {{ utilisateur.nom }}
+  </div>
+  <button class="btn-deco" (click)="deconnecter()">Déconnexion</button>
+</nav>
+

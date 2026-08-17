@@ -1,0 +1,22 @@
+<div class="produits-container">
+  <h2>Nos produits</h2>
+  <div class="produit-list">
+    <div class="produit-card" *ngFor="let produit of produits">
+      <img [src]="produit.photoUrl" alt="{{ produit.nom }}" />
+      <h3>{{ produit.nom }}</h3>
+      <p>{{ produit.prix | currency:'EUR' }}</p>
+      <button (click)="ajouterAuPanier(produit)">Ajouter</button>
+    </div>
+  </div>
+
+  <div class="total-panier">
+    Total : {{ total | currency:'EUR' }}
+  </div>
+</div>
+
+<div *ngIf="showToast" class="toast">
+  Produit ajoute au panier
+</div>
+
+<button (click)="validerCommande()">Valider la commande</button> <br>
+<a routerLink="/commandes" class="btn-commandes">Voir mes commandes</a>
